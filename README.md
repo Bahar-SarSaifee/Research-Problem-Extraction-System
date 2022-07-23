@@ -1,4 +1,4 @@
-# NLPContributionGraph Task
+# Research Problem Extraction System
 
 We prepared a rule-based approach for this task, utilizing some renowned python libraries and a graph-based method to extract a set of relevant keywords (scientific terms), which builds our research problem results after a group of operations. Using KnowledgeGraph, RAKE, TextRank, and YAKE, we create a collection of keywords from the STANZA text. In most cases, the research problem keywords and terms will emerge in the initial parts of an article. Thus, in this step, we choose the first 20 keywords from each extracted set of the methods mentioned above, as this number approximately provides us with a better result. Finally, we compute the similarity of all remnant keywords with the title and select the most similar keyword to the title as the research problem.
 
@@ -12,7 +12,3 @@ In the evaluation phase, using a python script, we collect all research problem 
 |Recall     | 0.23   | **0.24**    |     0.19    |             0.15           |              0.13               |
 |Precision  | 1.0    | 1.0         |      1.0    |              1.0           |               1.0               |
 |Accuracy   | 0.23   | **0.24**    |     0.19    |             0.15           |              0.13               |
-
-
-
-*The KeyBERT seems to be a promising solution to leverage in this task, but unfortunately, we do not have access to the BERT word embeddings due to the US sanctions.
