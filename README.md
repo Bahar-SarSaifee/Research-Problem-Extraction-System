@@ -1,6 +1,6 @@
 # Research Problem Extraction System for the NLPContributionGraph Shared Task 11 at SemEval-2021
 
-**The NLPContributionGraph (NCG) challenge was organized in SemEval 2021 . The general task information is available here https://ncg-task.github.io/**
+**The NLPContributionGraph (NCG) challenge was organized in SemEval 2021 . The general task information is available here: https://ncg-task.github.io/**
 
 We prepared a rule-based approach for this task, utilizing some renowned python libraries and a graph-based method to extract a set of relevant keywords (scientific terms), which builds our research problem results after a group of operations. Using KnowledgeGraph, RAKE, TextRank, and YAKE, we create a collection of keywords from the STANZA text. In most cases, the research problem keywords and terms will emerge in the initial parts of an article. Thus, in this step, we choose the first 20 keywords from each extracted set of the methods mentioned above, as this number approximately provides us with a better result. Finally, we compute the similarity of all remnant keywords with the title and select the most similar keyword to the title as the research problem.
 
